@@ -1,0 +1,29 @@
+:root {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  color: #111827;
+  background: #fff;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; }
+.page { max-width: 1000px; margin: 0 auto; padding: 24px; }
+.top h1 { margin: 0 0 8px; font-size: 30px; }
+.top p { margin: 0 0 24px; color: #4b5563; }
+.panel { display: grid; gap: 10px; margin-bottom: 20px; }
+input { border: 1px solid #d1d5db; border-radius: 10px; padding: 12px; font-size: 16px; }
+button { width: 120px; border: 0; border-radius: 10px; background: #111827; color: #fff; padding: 10px 0; cursor: pointer; }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+.error { padding: 12px; border: 1px solid #fca5a5; border-radius: 10px; background: #fef2f2; color: #b91c1c; }
+.scores { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 14px; background: #fff; }
+.card strong { font-size: 36px; }
+.block { margin-top: 18px; }
+ul { padding-left: 18px; }
+li { margin-bottom: 10px; }
+a { color: #111827; text-decoration: none; font-weight: 600; }
+a:hover { text-decoration: underline; }
+.angles { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tags span { border: 1px solid #d1d5db; border-radius: 999px; padding: 6px 10px; font-size: 13px; }
+@media (max-width: 700px) {
+  .scores { grid-template-columns: 1fr; }
+}
